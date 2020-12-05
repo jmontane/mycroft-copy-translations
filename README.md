@@ -1,4 +1,4 @@
-# mycroft-move-translations
+# mycroft-copy-translations
 A script to copy Mycroft skills translations from a source locale to a target locale.
 
 It copies translations of Mycroft skills from source locale to target locale.
