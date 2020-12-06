@@ -26,7 +26,7 @@ MYCROFT_SOURCE_LOCALE = 'ca'
 MYCROFT_TARGET_LOCALE = 'ca-es'
 
 def get_list_of_skills(path):
-   return [f.path for f in os.scandir(path) if f.is_dir()]
+   return [os.path.join(path, f) for f in os.listdir(path) if os.path.isdir(os.path.join(path, f))]
 
 def is_locale_skill(skill):
     return os.path.isdir(skill + '/locale')
